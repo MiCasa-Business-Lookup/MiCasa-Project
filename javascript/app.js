@@ -1,11 +1,16 @@
 angular
-	.module('myApp', ['ui.router', 'ui.bootstrap', 'angularUtils.directives.dirPagination'])
+	.module('myApp', ['ui.router', 'ui.bootstrap',
+  'myApp.login', 'angularUtils.directives.dirPagination'])
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 		$urlRouterProvider.otherwise("/");
 
 		$stateProvider
-			.state('home', {
+			.state('login', {
 				url: '/',
+				templateUrl: "templates/login.html"
+			})
+			.state('home', {
+				url: '/home',
 				controller: "businessController",
 				templateUrl: "templates/business.html"
 			})
