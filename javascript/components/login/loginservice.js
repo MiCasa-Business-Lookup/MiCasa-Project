@@ -20,6 +20,7 @@
       return user.userId;
     }
     function loginUser(username, password) {
+      //username:Lucas password:abc
       $http({
         method: 'post',
         params: {

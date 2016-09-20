@@ -2,6 +2,6 @@
 
 angular
   .module('myApp.login',[
-  // 'myApp.login.logindirective',
-  // 'myApp.login.loginservice'
+  'myApp.login.login',
+  'myApp.login.loginservice'
 ]);
